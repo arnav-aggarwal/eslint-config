@@ -30,9 +30,7 @@ module.exports = {
         'no-ex-assign': 1,
         'no-extra-boolean-cast': 2,
         'no-invalid-regexp': 2,
-        'no-irregular-whitespace':
-        [2,
-            { skipStrings: true, skipComments: true, skipTemplates: true }],
+        'no-irregular-whitespace': [2, { skipStrings: true, skipComments: true, skipTemplates: true }],
         'no-obj-calls': 2,
         'no-regex-spaces': 1,
         'no-sparse-arrays': 1,
@@ -57,7 +55,7 @@ module.exports = {
         'no-caller': 1,
         'no-case-declarations': 1,
         'no-else-return': 1,
-        'no-empty-function': [1, { allow: [Object] }],
+        'no-empty-function': [1, { allow: ['arrowFunctions'] }],
         'no-empty-pattern': 2,
         'no-eval': 1,
         'no-extend-native': 1,
@@ -72,7 +70,9 @@ module.exports = {
         'no-iterator': 1,
         'no-labels': 1,
         'no-lone-blocks': 1,
-        'no-multi-spaces': [1, {}],
+        'no-multi-spaces': [1, {
+            // ignoreEOLComments: true,
+        }],
         'no-multi-str': 1,
         'no-new': 1,
         'no-new-func': 1,
@@ -107,11 +107,11 @@ module.exports = {
         'no-undef': 1,
         'no-undef-init': 1,
         'no-unused-vars': 1,
+        'no-use-before-define': 2,
 
         //////////
         // Node //
         //////////
-        'no-use-before-define': 2,
         'handle-callback-err': 1,
         'no-mixed-requires': 1,
         'no-new-require': 1,
@@ -216,7 +216,7 @@ module.exports = {
         'react/jsx-boolean-value': 1,
         'react/jsx-curly-spacing': [1, 'always'],
         'react/jsx-equals-spacing': 1,
-        'react/jsx-filename-extension': [1, { extensions: [Object] }],
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
         'react/jsx-indent': [1, 4],
         'react/jsx-indent-props': 1,
         'react/jsx-key': 1,
