@@ -61,7 +61,6 @@ module.exports = {
         'dot-location': 0,
         'dot-notation': 1,
         'eqeqeq': 1,
-        'guard-for-in': 1,
         'no-alert': 1,
         'no-caller': 1,
         'no-case-declarations': 0,
@@ -136,7 +135,7 @@ module.exports = {
         'no-undef-init': 1,
         'no-undefined': 0,
         'no-unused-vars': 1,
-        'no-use-before-define': 2,
+        'no-use-before-define': [2, { functions: false, classes: false }],
 
         //////////
         // Node //
@@ -185,7 +184,7 @@ module.exports = {
         'max-len': 0,
         'max-lines': 0,
         'max-nested-callbacks': 0,
-        'max-params': [1, 2],
+        'max-params': [1, 3],
         'max-statements': 0,
         'max-statements-per-line': 0,
         'multiline-ternary': 0,
